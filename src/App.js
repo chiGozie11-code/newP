@@ -1,12 +1,17 @@
 import './App.css';
-import Header from './Header';
 import Main from './Main';
+import Normal from "./Normal";
+import { Route, Routes} from "react-router-dom"
+
 
 function App() {
   return (
     <div className="App">
-       <Header/>
-       <Main/>
+      
+      <Routes>
+        <Route path='/' element={<Main /> } exact/>
+        <Route path='/Normal' element={ <Normal /> } />
+      </Routes>
     </div>
   );
 }

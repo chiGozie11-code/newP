@@ -12,9 +12,19 @@
 .navgt {
     display: flex;
     justify-content: space-between;
-    margin: 15px;
-    margin-left: 250px;
-    margin-right: 250px;
+    align-content: space-between;
+    padding: 5px;
+    /* margin: 20px; */
+    /* margin-left: 250px;
+    margin-right: 250px; */
+    justify-content: center;
+}
+link {
+    text-decoration: none;
+    color: black;
+}
+.nav-links {
+    width: 650px;
 }
 ul li {
     list-style-type: none;
@@ -32,20 +42,23 @@ ul {
     background-color: black;
     border-radius: 20px;
     padding:5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     font-weight: 500;
 }
 .wrapper {
+    padding-top: 150px;
     background-color: white;
     display: flex;
     flex-wrap: wrap-reverse;
-    margin-left: 250px;
-    margin-right: 250px; 
+    justify-content: center;
+    /* margin-left: 250px;
+    margin-right: 250px;  */
 }
 .holder {
-    margin-top: 200px;
-    width: 500px;
+    /* margin-top: 200px; */
+    width: 510px;
+    margin: 40px;
 }
 .wrapper h1{
     font-size: 45px;
@@ -62,7 +75,7 @@ ul {
 #para1 {
     font-size: 20px;
     font-weight: 400;
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 #para2 {
@@ -82,7 +95,7 @@ ul {
     box-shadow: 2px 2px 10px wheat;
     width: 250px;
     position: relative;
-    left: 30px;
+    left: 40px;
 }
 .mage {
     display: inline-block;
@@ -92,9 +105,9 @@ ul {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 330px;
     position: relative;
-    left: 60px;
+    left: 0px;
     bottom: 120px;
 }
 .gif {
@@ -103,10 +116,55 @@ ul {
     border-radius: 20px;
     position: relative;
     left: 250px;
-    bottom: 120px;
+    bottom: 90px;
+    box-shadow: 1px 1px 10px darkcyan, 0 0 20px whitesmoke, 0 0 2px whitesmoke;
+}
+.wrapper-main {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+}
+.boxers {
+    width: 70%;
+    text-align: center;
+}
+.boxers h1 {
+    text-align: center;
+    font-size: 35px;
+}
+.boxers p {
+    font-size: 20px;
+}
+.boxs {
+    background-color:peachpuff;
+    width: 300px;
+    height: 250px;
+    margin: 13px;
+    border-radius: 10px;
+    position: relative;
+    left: 60px;
+}
+#wrapper-main-box {
+    background-image: url("./images/circle_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+#btn-box {
+    border: 2px solid black;
+    border-radius: 50px;
 }
 .burger {
     display: none;
+}
+.emma {
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
 }
 @media only screen and (max-width: 768px){
     *{
@@ -122,7 +180,6 @@ ul {
     .navgt {
         display: flex;
         justify-content: space-between;
-        margin: 10px;
     }
     .burger {
         width: 80px;
@@ -134,15 +191,62 @@ ul {
         display: none;
     }
     .gif {
+        position: relative;
+        left: 0px;
+        width: 250px;
+        height: 550px;
+    }
+    #dolted {
+        display: flex;
+        justify-content: center;
+        align-content: center;
         background-image: none;
     }
-    .holder {
-        justify-content: center;
-        text-align: justify;
-        width: 0px;
-        display: grid;
+    .wrapper {
+        padding-top: 300px;
+        display: flex;
+        flex-wrap: wrap-reverse;
     }
-    
+    .holder {
+        /* margin-top: 500px; */
+        text-align: justify;
+        font-size: 10px;
+        width: 510px;
+    }
+    .wrapper h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .mage {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .play {
+        position: relative;
+        left: 0px;
+        margin: 20px;
+        width: 400px;
+    }
+    .store {
+        width: 400px
+    }
+    .boxers {
+        text-align: center;
+        width: 90%;
+    }
+    #wrapper-main-box {
+        background-image: url("./images/circle_bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .boxs {
+        position: relative;
+        left: 20px;
+    }
     
    
 }
